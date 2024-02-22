@@ -28,7 +28,7 @@ df['PEDIDOS'] = df['PEDIDOS'].astype(str)
 pedido_input = st.text_input('Digite os números dos pedidos separados por vírgula:', '')
 
 # Processamento da entrada de pedidos para criar uma lista
-lista_pedidos = [pedido.strip() for pedido in pedido_input.split(',') if pedido.strip()]
+lista_pedidos = [pedido.strip() for pedido in pedido_input]#.split(',') if pedido.strip()]
 
 # Filtragem do DataFrame com base nos filtros selecionados
 if lista_pedidos:
